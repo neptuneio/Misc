@@ -1,4 +1,5 @@
 # Misc
 Multiple miscellaneous scripts
 
-# neptuneio-aws-user-creation: Script to create an AWS IAM user for Neptuneio integration
+# neptuneio-aws-user-creation
+Scripts and IAM policy JSONs to create an AWS IAM user with right priveleges for Neptuneio integration
