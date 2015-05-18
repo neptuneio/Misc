@@ -1,0 +1,98 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+    "Sid": "Stmt1399947803958",
+    "Action": [
+      "ec2:DescribeInstances",
+      "ec2:DescribeTags",
+      "ec2:RebootInstances",
+      "ec2:RunInstances",
+      "ec2:StartInstances",
+      "ec2:StopInstances",
+      "ec2:TerminateInstances"
+    ],
+    "Effect": "Allow",
+    "Resource": "*"
+  },
+  {
+    "Sid": "Stmt1399947834277",
+    "Action": [
+      "cloudwatch:DescribeAlarms",
+      "cloudwatch:DescribeAlarmsForMetric",
+      "cloudwatch:DeleteAlarms",
+      "cloudwatch:ListMetrics",
+      "cloudwatch:PutMetricAlarm",
+      "cloudwatch:PutMetricData",
+      "cloudwatch:GetMetricStatistics",
+      "cloudwatch:SetAlarmState"
+    ],
+    "Effect": "Allow",
+    "Resource": "*"
+  },
+  {
+    "Sid": "Stmt1399947461414",
+    "Action": [
+      "iam:GetUser"
+    ],
+    "Effect": "Allow",
+    "Resource": "*"
+  },
+  {
+    "Sid": "Stmt1399947503000",
+    "Action": "sqs:*",
+    "Effect": "Allow",
+    "Resource": "*"
+  },
+  {
+    "Sid": "Stmt1399923365747",
+    "Action":[
+      "autoscaling:DescribeAutoScalingGroups",
+      "autoscaling:DescribeAutoScalingInstances",
+      "autoscaling:DescribeTags"
+    ],
+    "Effect": "Allow",
+    "Resource": "*"
+  },
+  {
+    "Sid": "Stmt1399947665747",
+    "Action" :[
+      "opsworks:CreateInstance",
+      "opsworks:DeleteInstance",
+      "opsworks:DescribeApps",
+      "opsworks:DescribeInstances",
+      "opsworks:DescribeStacks",
+      "opsworks:RebootInstance",
+      "opsworks:StartInstance",
+      "opsworks:StartStack",
+      "opsworks:StopInstance",
+      "opsworks:StopStack"
+    ],
+    "Effect": "Allow",
+    "Resource": "*"
+  },
+  {
+      "Sid": "Stmt1411960116195",
+      "Action": [
+        "dynamodb:DescribeTable",
+        "dynamodb:ListTables",
+        "dynamodb:UpdateTable"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt12834324195",
+      "Action": [
+        "route53:CreateHealthCheck",
+        "route53:DeleteHealthCheck",
+        "route53:GetHealthCheck",
+        "route53:GetHealthCheckStatus",
+        "route53:ListHealthChecks",
+        "route53:UpdateHealthCheck"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}

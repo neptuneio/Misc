@@ -1,0 +1,20 @@
+{
+ "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "cloudwatch:*",
+        "sns:*",
+        "autoscaling:*",
+        "ec2:*",
+        "sqs:*",
+        "iam:GetUser",
+        "opsworks:*",
+        "dynamodb:*",
+        "route53:*"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
